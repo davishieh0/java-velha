@@ -55,6 +55,9 @@ public class Velha
                 }
                 while (!analista.fimDeJogo());
 
+                if (analista.getMarcaDoVencedor()==null)
+                    jogadorH.deuVelha ();
+                else
                 if (analista.getMarcaDoVencedor().equals(jogadorH.getMarca()))
                     jogadorH.vcGanhou ();
                 else
@@ -70,4 +73,4 @@ public class Velha
         }
         while (jogadorH.querMaisUmaPartida());
     }
-}
+}
